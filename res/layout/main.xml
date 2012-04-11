@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" ads:adUnitId="a14df79232bfa87"
+		ads:adSize="BANNER" ads:loadAdOnCreate="false" />
+
+	<TextView android:text="Select A Previous Flash Card"
+		android:id="@+id/flashtext" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"></TextView>
+	<Spinner android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/oldcards"/>
+		<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="50dip"
+		android:id="@+id/tableRow1" android:layout_below="@+id/tableRowText"
+		android:visibility="visible" android:layout_gravity="fill_horizontal|bottom">
+		<Button android:text="Delete This Card" android:layout_weight="1"
+			android:id="@+id/deleteButton" android:layout_width="fill_parent" android:enabled="false"
+			android:layout_height="wrap_content"></Button>
+		<Button android:text="New Flash Card" android:layout_weight="1"
+			android:id="@+id/newButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+	</TableRow>
+		<TextView android:text="Click on Image to Play"
+		android:id="@+id/playtext" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"></TextView>
+	<ImageView android:id="@+id/ImageView01" android:scaleType="fitStart"
+		android:layout_width="wrap_content" android:layout_height="fill_parent"
+		android:layout_below="@+id/tableButtonsRow" />	
+
+
+
+</LinearLayout>
